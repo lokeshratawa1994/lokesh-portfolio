@@ -7,8 +7,8 @@ function ProjectCardView({ project }) {
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
       <div className="flex flex-row">
         {/* Left Side: Project Data */}
-        <div className="w-1/2 px-4 lg:px-8 py-3 lg:py-5">
-          <div className="flex flex-row space-x-1 lg:space-x-2 absolute  -translate-y-1/2">
+        <div className="w-full lg:w-1/2 px-4 lg:px-8 py-3 lg:py-5">
+          <div className="flex flex-row space-x-1 lg:space-x-2 absolute -translate-y-1/2">
             <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
             <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
             <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
@@ -33,7 +33,7 @@ function ProjectCardView({ project }) {
               </div>
 
               <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">tools:</span>
+                <span className="text-white">tools:</span>
                 <span className="text-gray-400">{` ['`}</span>
                 {project.tools.map((tag, i) => (
                   <React.Fragment key={i}>
@@ -63,21 +63,19 @@ function ProjectCardView({ project }) {
         </div>
 
         {/* Right Side: Project Images */}
-        <div className='w-1/2 border-t-[2px]  border-indigo-900 my-12 py-8'>
-
-        <div className={`${project.images && project.images.length > 2 ? 'grid grid-cols-2 gap-2' : 'flex flex-col gap-2'} px-4 lg:px-8 py-2`}>
-        {project.images &&
-            project.images.slice(0, 4).map((image, index) => (
-            <img
-                key={index}
-                src={image}
-                alt={`Project ${project.name} - ${index + 1}`}
-                className="w-full h-40 object-cover rounded-md shadow-md"
-            />
-            ))}
+        <div className="hidden lg:block w-1/2 border-t-[2px] border-indigo-900 my-12 py-8">
+          <div className={`${project.images && project.images.length > 2 ? 'grid grid-cols-2 gap-2' : 'flex flex-col gap-2'} px-4 lg:px-8 py-2`}>
+            {project.images &&
+              project.images.slice(0, 4).map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Project ${project.name} - Image ${index + 1}`}
+                  className="w-full h-40 object-cover rounded-md shadow-md"
+                />
+              ))}
+          </div>
         </div>
-        </div>
-
       </div>
     </div>
   );
