@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lokesh Ratawa - Frontend Developer Portfolio
 
-## Getting Started
+> Modern, high-performance developer portfolio built with **Next.js 15 (App Router)**, **React 19**, and **Tailwind CSS**. Showcasing 3+ years of commercial frontend engineering experience spanning B2B supply chain networks, real estate contract platforms, bulk e-commerce, and Web3 marketplaces.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 🚀 Key Highlights & Architecture
+
+- **App Router & Server Components:** Built on Next.js 15 App Router architecture for fast streaming, sub-second TTFB, and optimal SEO.
+- **Categorized Skills Matrix:** Scannable tech competencies covering Core Frontend, TypeScript, State Management (Redux, Redux Toolkit, Zustand), UI Design Systems, and Web3/REST APIs.
+- **Visual Project Case Studies:** In-depth commercial project breakdowns featuring problem/solution summaries, architecture highlights, tech stacks, and production status.
+- **Responsive Mobile Navigation:** Mobile drawer navigation with accessible ARIA toggle attributes.
+- **Interactive Contact Route:** Integrated Next.js API route handler (`/api/contact`) with real-time field validation and feedback toasts.
+- **Performance Optimized:** Direct font optimization with `next/font/google` (Geist), zero-bloat styling, and responsive image loading.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Library & Languages:** React 19, TypeScript, JavaScript (ES6+)
+- **Styling:** Tailwind CSS, Vanilla CSS, Sass
+- **State Architecture Demonstrated:** Redux, Redux Toolkit, Zustand, React Context API
+- **Icons & Animation:** React Icons, Lottie React, React Fast Marquee
+- **Typography:** Geist & Geist Mono via `next/font`
+
+---
+
+## 💼 Featured Production Projects
+
+1. **Zyapaar (Let's Talk Pvt. Ltd):** B2B MSME supply chain networking and discovery platform.
+2. **Re-sure (Webclues Infotech):** Colorado-based real estate contract-signing and compliance portal.
+3. **Jumper (Webclues Infotech):** Warehouse and bulk-ordering commerce platform.
+4. **Zemass (Webclues Infotech):** UAE food ordering and restaurant reservation platform.
+5. **Supra-oracle (Jarvisbitz):** Web3 blockchain oracle data marketplace.
+
+---
+
+## 🏁 Getting Started Locally
 
 ```bash
-npm run dev
-# or
+# 1. Clone the repository
+git clone https://github.com/lokeshratawa1994/lokesh-portfolio.git
+cd lokesh-portfolio
+
+# 2. Install dependencies
+yarn install
+# or npm install
+
+# 3. Start development server
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# or npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to view the portfolio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📬 Contact & Connect
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email:** [sharma.lokesh071994@gmail.com](mailto:sharma.lokesh071994@gmail.com)
+- **LinkedIn:** [linkedin.com/in/lokesh-ratawa](https://www.linkedin.com/in/lokesh-ratawa/)
+- **GitHub:** [github.com/lokeshratawa1994](https://github.com/lokeshratawa1994)
+- **Live Demo:** [lokesh-portfolio-eosin.vercel.app](https://lokesh-portfolio-eosin.vercel.app/)

@@ -1,18 +1,12 @@
 export const personalData = {
-  name: "LOKESH",
+  name: "Lokesh Ratawa",
   profile: '/profile.jpg',
-  designation: "Front-end Developer",
-  description: `Hi, I'm Lokesh Ratawa — a passionate Frontend Developer specializing in React and Next.js.
-
-With a strong foundation in JavaScript and a deep enthusiasm for web development, I enjoy bringing ideas to life on the web. My journey as a developer is fueled by a desire to build seamless and interactive user experiences while embracing the latest advancements in the React ecosystem and Next.js framework.
-
-I thrive in building scalable and performant applications, and I’m particularly drawn to creating fast, user-friendly web experiences. Whether it’s optimizing performance or implementing innovative features, I approach every project with a passion for problem-solving and attention to detail.`,
+  designation: "Frontend Developer | React.js • Next.js • TypeScript",
+  description: `Frontend Developer with 3+ years of experience building responsive, type-safe, component-based web interfaces using React.js, Next.js, TypeScript, and JavaScript. Skilled in scalable state management (Redux, Redux Toolkit, Zustand), REST & Web3 API integration, and modular UI engineering with Tailwind CSS and Material-UI. Experienced working across B2B networking, real estate, bulk e-commerce, and blockchain projects to deliver fast, optimized applications.`,
   email: 'sharma.lokesh071994@gmail.com',
   phone: '+919351677114',
-  address: 'Jodhpur, Rajasthan, India',
+  address: 'Ahmedabad / Jodhpur, India',
   github: 'https://github.com/lokeshratawa1994',
-  facebook: 'https://www.facebook.com/lokesh.daddich',
   linkedIn: 'https://www.linkedin.com/in/lokesh-ratawa/',
-  instagram: "https://www.instagram.com/its.lokesh_ratawa/",
-  resume: "https://drive.google.com/file/d/1YJIrieeIpxmV893mrvcN6R2w6mWiEcAA/view?usp=sharing"
+  resume: "/Lokesh_Ratawa_Frontend_Developer_Resume.docx"
 };

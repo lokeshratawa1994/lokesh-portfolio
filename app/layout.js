@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-// import { GoogleTagManager } from "@next/third-parties/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/footer";
@@ -7,7 +6,6 @@ import ScrollToTop from "./components/helper/scroll-to-top";
 import Navbar from "./components/navbar";
 import "./globals.css";
 import "./card.scss";
-// import "./globals.scss";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,26 +18,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio of Lokesh Ratawa - Front-end Developer",
+  title: "Lokesh Ratawa | Frontend Developer | React.js • Next.js • TypeScript",
   description:
-    "This is the portfolio of Lokesh Ratawa. I am a Front-end developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "Portfolio of Lokesh Ratawa, Frontend Developer with 3+ years of experience building high-performance web applications using React.js, Next.js, TypeScript, Redux, Zustand, and Tailwind CSS.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <ToastContainer />
-        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+        <ToastContainer position="top-right" autoClose={3000} theme="dark" />
+        <main className="min-h-screen relative mx-auto px-4 sm:px-6 md:px-8 lg:max-w-[72rem] xl:max-w-[78rem] 2xl:max-w-[92rem] text-white">
           <Navbar />
           {children}
           <ScrollToTop />
         </main>
         <Footer />
       </body>
-      {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} /> */}
     </html>
   );
 }

@@ -1,31 +1,38 @@
-// pages/projects.js
-
 import { projectsData } from '@/utils/data/projects-data';
-import ProjectCardView from '../components/homepage/projects/view-all-project';
+import ProjectCard from '../components/homepage/projects/project-card';
+import Link from 'next/link';
+import { BsArrowLeft } from 'react-icons/bs';
+
+export const metadata = {
+  title: "Projects | Lokesh Ratawa - Frontend Developer",
+  description: "Explore all commercial, client, and Web3 projects developed by Lokesh Ratawa using React.js, Next.js, Redux, and Tailwind CSS."
+};
 
 const AllProjects = () => {
   return (
-    <div id="projects" className="relative z-50 my-12 lg:my-24">
-      <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl opacity-30"></div>
-        <div className="flex items-center justify-start relative">
-          <span className="bg-[#1a1443] absolute left-0 w-fit text-white px-5 py-3 text-xl rounded-md">
-            ALL PROJECTS
-          </span>
-          <span className="w-full h-[2px] bg-[#1a1443]"></span>
-        </div>
+    <div className="relative z-10 pt-8 pb-16">
+      {/* Back button and page title */}
+      <div className="mb-10 pb-6 border-b border-[#23294c]">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-xs font-semibold text-gray-400 hover:text-[#16f2b3] mb-4 transition-colors"
+        >
+          <BsArrowLeft size={16} />
+          <span>Back to Home</span>
+        </Link>
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
+          All Commercial & Client Projects
+        </h1>
+        <p className="text-sm text-gray-300 mt-2 max-w-2xl">
+          A comprehensive portfolio of web applications, B2B platforms, real estate software, e-commerce systems, and Web3 integrations built over 3+ years.
+        </p>
       </div>
 
-      <div className="pt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-8">
-          {projectsData.map((project, index) => (
-            <div key={index} className="w-full mx-auto">
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCardView project={project} />
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Projects List */}
+      <div className="flex flex-col gap-10">
+        {projectsData.map((project, index) => (
+          <ProjectCard key={project.id} project={project} index={index} />
+        ))}
       </div>
     </div>
   );
